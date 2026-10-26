@@ -5,7 +5,7 @@ sealed class Estados {
     object Idle : Estados(){
         fun onEnter(){
             println("Entrado al estado Idle")
-            Thread.sleep(1000)
+            Thread.sleep(2000)
             estado_acual = Estados.MovingUP
 
         }
@@ -19,7 +19,7 @@ sealed class Estados {
     object MovingUP : Estados(){
         fun onEnter(){
             println("Entrando a moving up")
-            Thread.sleep(1000)
+            Thread.sleep(2000)
 
             val botonera = nivel_actual
             if (botonera == 2) {
@@ -42,7 +42,7 @@ sealed class Estados {
     object MovingDOWN : Estados(){
         fun onEnter(){
             println("Entrando a moving down")
-            Thread.sleep(1000)
+            Thread.sleep(2000)
 
             val botonera = nivel_actual
 
@@ -66,7 +66,7 @@ sealed class Estados {
     object Error : Estados(){
         fun onEnter() {
             println("Entrando al estado Error")
-            Thread.sleep(1000)
+            Thread.sleep(2000)
             println("Error: entrada de valor no valido ")
             estado_acual = Estados.Idle
         }
