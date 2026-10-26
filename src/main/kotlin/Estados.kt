@@ -9,7 +9,9 @@ sealed class Estados {
             estado_acual = Estados.MovingUP
 
         }
-
+        override fun toString(): String {
+            return "E1_Idle"
+        }
     }
 
 
@@ -32,7 +34,9 @@ sealed class Estados {
             }
             botonera -1
         }
-
+        override fun toString(): String {
+            return "MovingUP"
+        }
 
     }
     object MovingDOWN : Estados(){
@@ -54,7 +58,9 @@ sealed class Estados {
             }
             botonera -2
         }
-
+        override fun toString(): String {
+            return "MovingDOWN"
+        }
 
     }
     object Error : Estados(){
@@ -65,6 +71,9 @@ sealed class Estados {
             estado_acual = Estados.Idle
         }
 
+        override fun toString(): String {
+            return "Error"
+        }
 
 
     }

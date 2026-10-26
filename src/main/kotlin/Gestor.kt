@@ -10,6 +10,7 @@ var estado_acual: Estados = Estados.Idle
  * Gestiona el cambio de estados
  */
 fun gestor(): Int {
+    println("Estado actual: ${estado_acual.toString()}")
     when (estado_acual) {
         is Estados.Idle -> {
             nivel_actual = 0
