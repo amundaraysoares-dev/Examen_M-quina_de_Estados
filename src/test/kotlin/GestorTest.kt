@@ -46,4 +46,6 @@ class GestorTest {
         assertEquals(-1, gestor())
         assertEquals(-1, nivel_actual)
     }
+
+
 }
