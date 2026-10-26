@@ -4,6 +4,10 @@
 ## Funcionamiento General
 Esta máquina de estados controla de forma automatizada el funcionamiento del ascensor "Halo de Vigo", ya que se encarga de ir controlado como se encuentra  el ascensor, en que lugar se encuentra ahora mismo, si enta en movimiento o si ha sucedido algun error.
 
+## funcionamiento
+la maquina ira recibiendo los valores de la botonera y dependiendo del valor ejecutara una accion, ya sea subir o bajar, siempre despues de una accion volvera al estado Idle y caso de insertar un valor invalido o pulsar algun boton en movimiento, nos salatara su respectivo mensage
+
+
 ## TEST
 foto de los tests
 ![img.png](fotos/img.png)
